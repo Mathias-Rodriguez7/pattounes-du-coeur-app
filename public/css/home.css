@@ -1,0 +1,116 @@
+:root {
+    font-size: 16px;
+    /* Couleurs principales */
+    --color-primary: #aa3347;      /* couleur principale (actions, boutons) */
+    --color-text: #93142f; /* hover, accent fort */
+    --color-primary-darker: #551c23; /* titres importants */
+
+    /* Couleurs secondaires */
+    --color-secondary: #d4acad8b;    /* fond doux */
+    --color-secondary-darker: #35030c;         /* texte principal */
+
+    /* Couleurs d’accent */
+    --color-accent: #cf8788;       /* liens, éléments secondaires */
+
+    /* background color */
+    --color-background: #f3f1eb;   /* fond global */
+
+}
+
+#menu-navbar {
+    background-color: #f4c6c7d8;
+    position: fixed;
+    width: 100%;
+}
+
+#menu-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .5rem;
+}
+
+#menu-navbar a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+#menu-navbar a:hover {
+  color: var(--color-primary-dark);
+}
+
+#menu-navbar img {
+  height: 60px;
+}
+
+section {
+    width: 100%;
+    height: 600px;
+}
+
+.title {
+    background-image: url("../img/chats/backgound-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+        padding-top: 120px;
+        justify-self: center;
+    }
+}
+
+.services,
+.actus {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    img {
+        width: 300px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+}
+
+.actus {
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-secondary);
+        border-radius: 1rem;
+        padding: 2rem;
+        gap: 2rem;
+        h3 {
+            font-size: 1.5rem;
+            align-self: center;
+        }
+        a {
+            align-self: flex-end;
+        }
+    }
+}
+
+.services {
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+}
