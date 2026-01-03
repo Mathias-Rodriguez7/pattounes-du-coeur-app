@@ -8,6 +8,9 @@
     
     <!-- Common styles -->
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,81 +20,89 @@
 </head>
 <body>
     <header>
-        <nav id="menu-navbar">
-            <ul>
-                <li><a href="/chat">Adoptions</a></li>
-                <li><a href="/conseils">Conseils</a></li>
-                <li><a href="/association">L'association</a></li>
-                <li><a href="/home"><img src="../img/logo_pattoune_sans_texte.png" alt="logo Les pattounes du coeur"></a></li>
-                <li><a href="/boutique">Boutique</a></li>
-                <li><a href="/nous_contacter">Nous Contacter</a></li>
-                <li><button>Connexion</button></li>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a class="nav_link" href="/chat">Adoptions</a></li>
+                <li class="nav_item"><a class="nav_link" href="/conseils">Conseils</a></li>
+                <li class="nav_item"><a class="nav_link" href="/association">L'association</a></li>
+                <li class="nav_item nav_item--logo"><a class="nav_link" href="/home"><img class="nav_logo" src="../img/logo_pattoune_sans_texte.png" alt="logo Les pattounes du coeur"></a></li>
+                <li class="nav_item"><a class="nav_link" href="/boutique">Boutique</a></li>
+                <li class="nav_item"><a class="nav_link" href="/nous_contacter">Nous Contacter</a></li>
+                <li class="nav_item"><button class="nav_login-btn" aria-haspopup="dialog">Connexion</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="title">
-            <h1><img src="../img/logo_pattounes_texte.png" alt="Les pattounes du coeur"></h1>
+        <section class="hero">
+            <h1 class="hero_title"><img src="../img/logo_pattounes_texte.png" alt="Les pattounes du coeur"></h1>
         </section>
         <section class="actus">
             <h2>Nos actus</h2>
-            <ul>
-                <li>
-                    <article class="news">
-                        <h3>title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
-                        <a href="/new:id">La suite</a>
-                    </article>
+            <ul class="news_list">
+                <li class="news_list_item">
+                    <a href="/new:id">
+                        <article class="news_card">
+                            <h3 class="news_card_title">title</h3>
+                            <p class="news_card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
+                            <p class="news_card_link">La suite</p>
+                        </article>
+                    </a>
                 </li>
-                <li>
-                    <article class="news">
-                        <h3>title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
-                        <a href="/new:id">La suite</a>
-                    </article>
+                <li class="news_list_item">
+                    <a href="/new:id">
+                        <article class="news_card">
+                            <h3 class="news_card_title">title</h3>
+                            <p class="news_card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
+                            <p class="news_card_link">La suite</p>
+                        </article>
+                    </a>
                 </li>
-                <li>
-                    <article class="news">
-                        <h3>title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
-                        <a href="/new:id">La suite</a>
-                    </article>
+                <li class="news_list_item">
+                    <a href="/new:id">
+                        <article class="news_card">
+                            <h3 class="news_card_title">title</h3>
+                            <p class="news_card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
+                            <p class="news_card_link">La suite</p>
+                        </article>
+                    </a>
                 </li>
-                <li>
-                    <article class="news">
-                        <h3>title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
-                        <a href="/new:id">La suite</a>
-                    </article>
+                <li class="news_list_item">
+                    <a href="/new:id">
+                        <article class="news_card">
+                            <h3 class="news_card_title">title</h3>
+                            <p class="news_card_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi voluptatum voluptates voluptatem rem rerum, similique tempora, nam totam esse, blanditiis quam reprehenderit ipsa aperiam aut saepe nemo quaerat cumque.</p>
+                            <p class="news_card_link">La suite</p>
+                        </article>
+                    </a>
                 </li>
             </ul>
-            <a href="/news" class="btn">Lire la suite</a>
+            <a href="/news" class="actus_link">Lire la suite</a>
         </section>
         <section class="services">
             <h2>Nos services</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Faire un don</h3>
-                        <img src="../img/chats/20251230_133853.jpg" alt="">
+            <ul class="services_list">
+                <li class="services_list_item">
+                    <a class="services_link" href="#">
+                        <h3 class="services_title">Faire un don</h3>
+                        <img class="services_img" src="../img/chats/20251230_133853.jpg" alt="">
                     </a>
                 </li>
-                <li>
-                    <a href="/add_fa">
-                        <h3>Devenez ma famille d'accueil</h3>
-                        <img src="../img/chats/image.jpg">
+                <li class="services_list_item">
+                    <a class="services_link" href="/add_fa">
+                        <h3 class="services_title">Devenez ma famille d'accueil</h3>
+                        <img class="services_img" src="../img/chats/image.jpg">
                     </a>
                 </li>
-                <li>
-                    <a href="/chat">
-                        <h3>Adoptez moi</h3>
-                        <img src="../img/chats/IMG-20250828-WA0004.jpg">
+                <li class="services_list_item">
+                    <a class="services_link" href="/chat">
+                        <h3 class="services_title">Adoptez moi</h3>
+                        <img class="services_img" src="../img/chats/IMG-20250828-WA0004.jpg">
                     </a>
                 </li>
-                <li>
-                    <a href="/join_association">
-                        <h3>Rejoignez nous</h3>
-                        <img src="../img/chats/FB_IMG_1767105077493.jpg">
+                <li class="services_list_item">
+                    <a class="services_link" href="/join_association">
+                        <h3 class="services_title">Rejoignez nous</h3>
+                        <img class="services_img" src="../img/chats/FB_IMG_1767105077493.jpg">
                     </a>
                 </li>
             </ul>

@@ -1,0 +1,49 @@
+/* ===== NAV BAR ===== */
+.nav {
+    background-color: #f4c6c7d8;
+    position: fixed;
+    width: 100%;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem;
+}
+
+.nav_item {
+    display: flex;
+}
+
+.nav_link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: bold;
+    width: 120px;
+    font-size: 1.2rem;
+
+}
+
+.nav_logo {
+    height: 70px;
+}
+
+.nav_login-btn {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding-left: 2rem;
+}

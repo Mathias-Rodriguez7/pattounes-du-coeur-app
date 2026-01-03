@@ -1,163 +1,80 @@
-:root {
-    font-size: 16px;
-    /* Couleurs principales */
-    --color-primary: #aa3347;      /* couleur principale (actions, boutons) */
-    --color-text: #93142f; /* hover, accent fort */
-    --color-primary-darker: #551c23; /* titres importants */
 
-    /* Couleurs secondaires */
-    --color-secondary: #d4acad8b;    /* fond doux */
-    --color-secondary-darker: #35030c;         /* texte principal */
-
-    /* Couleurs d’accent */
-    --color-accent: #cf8788;       /* liens, éléments secondaires */
-
-    /* background color */
-    --color-background: #f3f1eb;   /* fond global */
-
+/* ===== HERO ===== */
+.hero {
+    background-image: url("../img/chats/backgound-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+.hero_title {
+    padding-top: 120px;
+    justify-self: center;
 }
 
-#menu-navbar {
-    background-color: #f4c6c7d8;
-    position: fixed;
-    width: 100%;
-}
 
-#menu-navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: .5rem;
-}
-
-#menu-navbar li {
-    display: flex;
-}
-
-#menu-navbar a {
-    text-decoration: none;
-    text-align: center;
-    color: var(--color-primary);
-    font-weight: bold;
-    width: 120px;
-    font-size: 1.2rem;
-
-}
-
-#menu-navbar img {
-    height: 70px;
-}
-
-#menu-navbar {
-    button {
-        font-weight: bold;
-        font-size: 1.2rem;
-        border: none;
-        background-color: transparent;
-        color: var(--color-primary);
-    }
-}
-
+/* ===== MAIN ===== */
 section {
     width: 100%;
     height: 600px;
 }
 
-.title {
-    background-image: url("../img/chats/backgound-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    h1 {
-        padding-top: 120px;
-        justify-self: center;
-    }
-}
-
-.services,
-.actus {
-    background-color: var(--color-background);
+.actus, 
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    h2 {
-        margin-top: 2rem;
-        color: var(--color-primary);
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        padding: 2rem;
-        width: 100%;
-    }
-    img {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        border-radius: 2rem;
-        box-shadow: 0px 1px 10px var(--color-secondary-darker);
-    }
-    
+}
+.actus h2,
+.services h2 {
+    margin-top: 2rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: bold;
+} 
+
+.news_list,
+.services_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
 }
 
-.actus {
-    article {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-secondary);
-        border-radius: 2rem;
-        padding: 2rem;
-        gap: 2rem;
-        height: 350px;
-        box-shadow: 0px 1px 10px var(--color-secondary-darker);
-        h3 {
-            font-size: 1.5rem;
-            align-self: center;
-        }
-        a {
-            align-self: flex-end;
-        }
-    }
-    .btn {
-        display: inline-block;
-        padding: 0.6rem 1.2rem;
-        background-color: var(--color-primary);
-        color: white;
-        border-radius: 2rem;
-        text-decoration: none;
-    }
+.services_title {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
 }
 
-.services {
-    a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        border-radius: 2rem;
-    }
-    h3 {
-        color: var(--color-primary);
-        font-style: 2rem;
-        font-weight: bold;
-    }
-    img {
-        height: 350px;
-    }
+.actus_link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
 }
 
-footer {
-    height: 100px;
+.services_link {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: var(--color-secondary);
-    padding-left: 2rem;
+    gap: 1rem;
+    border-radius: 2rem;
 }
+
+.services_img {
+    height: 350px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0px 1px 10px var(--color-secondary-darker);
+}
+
+
+
