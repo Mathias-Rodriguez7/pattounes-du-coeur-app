@@ -11,9 +11,10 @@
 
     /* Couleurs d’accent */
     --color-accent: #cf8788;       /* liens, éléments secondaires */
-
+    
     /* background color */
     --color-background: #f3f1eb;   /* fond global */
+    --color-background-secondary: #f0a8a8c8;
 
 }
 

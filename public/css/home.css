@@ -1,35 +1,44 @@
-
 /* ===== HERO ===== */
 .hero {
-    background-image: url("../img/chats/backgound-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 700px;
 }
 
 .hero_title {
-    padding-top: 120px;
-    justify-self: center;
+    padding-top: 50px;
+    z-index: 2;
+    margin-top: 50px;
 }
 
-
-/* ===== MAIN ===== */
-section {
+.hero_video {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 600px;
+    height: 100%;
+    transform: scale(1.22);
+    pointer-events: none; 
 }
 
+/* ===== MAIN ===== */*
+
+/* ===== ALL SECTION ===== */
 .actus, 
 .services {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    height: 700px;
 }
+
 .actus h2,
 .services h2 {
     margin-top: 2rem;
-    color: var(--color-primary);
     font-size: 2rem;
     font-weight: bold;
 } 
@@ -43,20 +52,39 @@ section {
     width: 100%;
 }
 
-.services_title {
+/* ===== ACTUS ===== */
+.actus h2 {
     color: var(--color-primary);
-    font-weight: bold;
-    font-size: 1.5rem;
-    align-self: center;
 }
 
 .actus_link {
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-background);
     border-radius: 2rem;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.actus_link:hover {
+    transform: scale(1.05);
+
+}
+
+/* ===== SERVICES ===== */
+.services {
+    background-color: var(--color-text);
+    color: var(--color-background);
+    padding-bottom: 2rem;
+}
+
+.services_title {
+    color: var(--color-background);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
 }
 
 .services_link {
@@ -73,8 +101,18 @@ section {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 2rem;
-    box-shadow: 0px 1px 10px var(--color-secondary-darker);
+    box-shadow: 0px 5px 10px var(--color-secondary-darker);
+    transition: transform 0.3s ease;
 }
 
+.services_img:hover {
+    transform: scale(1.05);
+}
 
-
+@media (max-width: 1160px) {
+    .news_list,
+    .services_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
