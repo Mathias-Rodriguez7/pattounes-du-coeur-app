@@ -1,0 +1,115 @@
+:root {
+    font-size: 16px;
+    /* Couleurs principales */
+    --color-primary: #aa3347;      /* couleur principale (actions, boutons) */
+    --color-text: #93142f; /* hover, accent fort */
+    --color-primary-darker: #551c23; /* titres importants */
+
+    /* Couleurs secondaires */
+    --color-secondary: #d4acad8b;    /* fond doux */
+    --color-secondary-darker: #35030c;         /* texte principal */
+
+    /* Couleurs d’accent */
+    --color-accent: #cf8788;       /* liens, éléments secondaires */
+
+    /* background color */
+    --color-background: #f3f1eb;   /* fond global */
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu-navbar {
+    background-color: #f4c6c7d8;
+    position: fixed;
+    width: 100%;
+}
+
+#menu-navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem;
+}
+
+#menu-navbar li {
+    display: flex;
+}
+
+#menu-navbar a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: bold;
+    width: 120px;
+    font-size: 1.2rem;
+
+}
+
+#menu-navbar img {
+    height: 70px;
+}
+
+#menu-navbar {
+    button {
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: none;
+        background-color: transparent;
+        color: var(--color-primary);
+    }
+}
+
+section {
+    margin: 0, auto;
+    padding-top: 120px;
+    padding-bottom: 2rem;
+    background-color: var(--color-background);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: var(--color-primary);
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem;
+        gap: 2rem;
+
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-secondary);
+        /* height: 400px;
+        max-width: 300px; */
+        border-radius: 2rem;
+        box-shadow: 0px 5px 10px var(--color-secondary-darker);
+        padding: 1.5rem;
+        gap: 1rem;
+        h2 {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    }
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding-left: 2rem;
+}
